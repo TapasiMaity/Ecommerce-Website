@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sproduct</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+    
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+  <!-- Remixicon (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <style>
+    .small-img-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .small-img-col {
+      flex-basis: 19%;
+      cursor: pointer;
+    }
+    .small-img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .small-img:hover {
+      transform: scale(1.05);
+    }
+    #MainImg {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      transition: all 0.4s ease;
+      border-radius: 8px;
+    }
+    .sproduct select{
+      display: block;
+      padding: 5px 5px;
+    }
+    .sproduct input{
+      width: 40px;
+      height: 35px;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .sproduct input{
+      outline: none;
+    }
+
+    .buy-btn {
+  background: #fb774b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 14x;
+  font-weight: 200;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.buy-btn:hover {
+  background: #e5673b;
+  transform: scale(1.05);
+}
+
+/* Active (clicked) effect */
+.buy-btn:active {
+  background: #cc4a1c;
+  transform: scale(0.97);
+}
+  </style>
+  </head>
+
+
+<body style="background-color: #E5C8C8">
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top shadow-sm"><!--akhane bh-light dila background gray habe-->
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png"  width="60" alt="Style Hub"/>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3 search-box">
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <li class="nav-item"><a class="nav-link" href="">Home</a></li>   <!--link-->
+          <li class="nav-item"><a class="nav-link active" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">❤️</a></li>
+          <li class="nav-item">
+            <i class="ri-search-line"></i>
+           <i class="ri-shopping-bag-line"></i>
+          </li>
+          </ul>
+      </div>
+    </div>
+            <div class="auth-buttons">
+        <button class="btn"> 𝚂𝚒𝚐𝚗 In</button>
+        <button class="btn"> 𝚂𝚒𝚐𝚗 Up</button>
+    
+    <!--<li>
+        <button class="btn btn-sm" style="margin: 4px; background-color: #c4c166;"><i class="fa-solid fa-user-plus" class=""></i>𝚂𝚒𝚐𝚗 Up</button>
+    </li>-->
+  </div>   
+  </nav>
+
+<section class=" container sproduct my-5 pt-5">
+  <div class="row mt-5">
+      <div class="col-lg-6 col-md-12 col-12">
+    <img src="assets/img/shoap-1.jpg" id="MainImg" alt="Main Product">
+
+    <div class="small-img-row">
+      <div class="small-img-col">
+        <img src="assets/img/shoap-1.jpg" class="small-img" alt="">
+      </div>
+      <div class="small-img-col">
+        <img src="assets/img/shoap_21.jpg" class="small-img" alt="">
+      </div>
+      <div class="small-img-col">
+        <img src="assets/img/shoap_22.jpg" class="small-img" alt="">
+      </div>
+      <div class="small-img-col">
+        <img src="assets/img/shoap_23.jpg" class="small-img" alt="">
+      </div>
+      <div class="small-img-col">
+        <img src="assets/img/shoap_24.jpg" class="small-img" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-12 col-12">
+    <h6>Home / T.Shirt</h6>
+    <h3 class="py-3">Men's Fashion T Shirt</h3>
+    <h2>₹365.00</h2>
+    <select class="my-3">
+      <option>Select Size</option>
+      <option>XL</option>
+      <option>XXL</option>
+      <option>M</option>
+      <option>L</option>
+      <option>S</option>
+    </select>
+    <input type="number" value="1">
+    <button class="buy-btn">Add To Cart</button>
+    <h4 class="mt-4 mb-4">Product Details</h4>
+  
+      <ul>Fabric: Cotton</ul>
+      <ul>Collar : V Neck with Button</ul>
+      <ul>Length: upto 25 in</ul>
+      <ul>Type: Stitched</ul>
+      <ul>Pattern: Solid</ul>
+      <ul>Package Contents: 1 T Shirt</ul>
+    
+  </div>
+</div>
+</section>
+
+<section id="featured" class="my-3 pb-3 ">
+  <div class="container text-center  mt-3 py-3">
+    <h3>Our Featured</h3>
+    <hr class="mx-auto">
+    <p>Here You can ceck out our new products with fair price on Style Hub</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-mid-4 col-12 ">
+      <img class="img-fluid mb-3 " src="assets/img/img_4.jpg">
+      <div class="star">
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+
+      </div>
+      <h5 class="p-name">Trailmaster Black Boots</h5>
+      <h4 class="p-price">$92.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+     <div class="product text-center col-lg-3 col-mid-4 col-12 ">
+      <img class="img-fluid mb-3 " src="assets/img/img_5.jpg">
+      <div class="star">
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+      </div>
+      <h5 class="p-name">Rugged Trail brown Boots</h5>
+      <h4 class="p-price">$90.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+     <div class="product text-center col-lg-3 col-mid-4 col-12 ">
+      <img class="img-fluid mb-3 " src="assets/img/img_6.jpg">
+      <div class="star">
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+      </div>
+      <h5 class="p-name">SportsEase carry Bag</h5>
+      <h4 class="p-price">$92.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+     <div class="product text-center col-lg-3 col-mid-4 col-12 ">
+      <img class="img-fluid mb-3 " src="assets/img/img_7.jpg">
+      <div class="star">
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+         <i class="ri-star-fill"></i>
+      </div>
+      <h5 class="p-name">CoolBreeze Cap</h5>
+      <h4 class="p-price">$90.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="mt-5 py-5">
+  <div class="row container mx-auto pt-5">
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <img src="assets/img/logo.png" alt="logo" width="100">
+      <p>Shop smart, online better.<br>New trends every week.<br>Shop.. Smile.. Repeat..</p>
+    </div>
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Featured</h5>
+      <ul class="text-upercase list-unstyled">
+        <li>Men</li>
+        <li>Women</li>
+        <li>Boys</li>
+        <li>Girls</li>
+        <li>New arrivals</li>
+        <li>Shoes</li>
+        <li>Clothes</li>
+      </ul>
+    </div>
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Contact Us</h5>
+      <div>
+        <h5 class="text-upercase">Address</h5>
+        <p>Shop no. 12, Muktaram Bazar, Balighata-7015</p>
+      </div>
+      <div>
+        <h5 class="text-upercase">Phone</h5>
+        <p>96XXXXXXXX</p>
+      </div>
+      <div>
+        <h5 class="text-upercase">Email</h6>
+        <p>stylemail640@gmail.com</p>
+      </div>
+    </div>
+     <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Instagram</h5>
+
+      <div class="row">
+        <img class="img-fluid w-25 h-90 m-2" src="assets/img/f-1.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-2.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-3.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-4.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-5.jpg">
+      </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copyright mt-5">
+    <div class="row container mx-auto">
+      <div class="col-lg-3 col-md-6 col-12 text-nowrap">
+        <p style="text-align: center;">StyleHub ecommerce... All Rights Reserved.</p>
+      </div>
+      <div  style="text-align:right;" class="col-lg-3 col-md-6 col-12">
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-instagram-line"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+   <!-- Bootstrap JS -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!--tshirt ar option guloy click korle barobe-->
+
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    for (let i = 0; i < smallimg.length; i++) {
+      smallimg[i].onclick = function() {
+        MainImg.src = this.src;
+      }
+    }
+  </script>
+
+
+</body>
+</html>

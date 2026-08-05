@@ -1,0 +1,165 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign in</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+  <!-- Remixicon (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+   <style type="text/css">
+
+    body{
+      background-color: beige;
+      font-family: Arial, sans-serif;
+      margin-top:7%;
+    }
+    .wishlist-title{
+      font-weight:600;
+    }
+    .card:hover{
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+    .product-img{
+      max-width:130px;
+    }
+    .btn-outline-secondary{
+      background-color: purple;
+      color: #fff;
+    }
+    .btn-outline-secondar: hover{
+      background-color: #6c757d;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top shadow-sm"><!--akhane bh-light dila background gray habe-->
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+ <img src="assets/img/logo.png"  width="60" alt="Style Hub"/>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3 search-box">
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>   <!--link-->
+          <li class="nav-item"><a class="nav-link" href="shoap.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">❤️</a></li>
+        
+             
+              <li class="nav-item">
+            <a class="nav-link" href="card.html">
+           <i class="ri-shopping-bag-line"></i></a>
+          </li>
+      </div>
+    </div>
+
+              <div class="auth-buttons nav-item">
+       
+                <a class="nav-link btn" href="a.html">
+        𝚂𝚒𝚐𝚗 In</a>
+
+         
+                <a class="nav-link btn" href="b.html">
+         𝚂𝚒𝚐𝚗 Up</a>
+    
+    <!--<li>
+        <button class="btn btn-sm" style="margin: 4px; background-color: #c4c166;"><i class="fa-solid fa-user-plus" class=""></i>𝚂𝚒𝚐𝚗 Up</button>
+    </li>-->
+  </div>   
+    
+  </nav>
+
+ 
+
+
+ 
+
+<div class="container my-5">
+
+  <!-- PAGE HEADER -->
+  <div class="text-center mb-4">
+    <h2 class="wishlist-title">❤️ My Wishlist</h2>
+    <p class="text-muted">
+      Save your favourite products here and buy later.
+    </p>
+  </div>
+
+  <!-- ITEM 1 -->
+  <div class="card mb-4 shadow-sm">
+    <div class="row g-0 align-items-center p-3">
+      <div class="col-md-2 text-center">
+        <img src="assets/img/shoap_14.jpg" class="img-fluid rounded product-img" alt="Brown Shoe">
+      </div>
+      <div class="col-md-6">
+        <h5> Sandle</h5>
+        <p class="text-success fw-bold fs-5">$115.00</p>
+        <small class="text-muted">In stock • Free delivery</small>
+      </div>
+      <div class="col-md-4 text-end">
+        <a href="cart.html" class="btn btn-success btn-sm me-2">Add to Cart</a>
+        <button class="btn btn-danger btn-sm">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="card mb-4 shadow-sm">
+    <div class="row g-0 align-items-center p-3">
+      <div class="col-md-2 text-center">
+        <img src="assets/img/shoap_9.jpg" class="img-fluid rounded product-img" alt="Black Shoe">
+      </div>
+      <div class="col-md-6">
+        <h5>Tolly Bag</h5>
+        <p class="text-success fw-bold fs-5">$115.00</p>
+        <small class="text-muted">In stock • Free delivery</small>
+      </div>
+      <div class="col-md-4 text-end">
+        <a href="cart.html" class="btn btn-success btn-sm me-2">Add to Cart</a>
+        <button class="btn btn-danger btn-sm">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTINUE SHOPPING BUTTON -->
+  <div class="text-center mt-4">
+    <a href="shoap.html" class="btn btn-outline-secondary">
+      ← Continue Shopping 
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>

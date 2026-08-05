@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign in</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+  <!-- Remixicon (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+   <style type="text/css">
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top:60px;
+
+}
+.auth-container{
+  padding: 35px 30px; 
+  
+}
+
+.auth-container h2{
+  margin-bottom: 30px;
+}
+
+.form-group{
+  margin-bottom: 22px;  
+}
+
+.form-group label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.auth-container button{
+  margin-top: 20px;     
+}
+
+.auth-container p{
+  margin-top: 20px;
+}
+.auth-container .login-btn{
+  width: 350px;
+  padding: 4px 10px;
+   background: gray;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 24px;
+   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+.login-btn{
+ width: 100%;
+ padding: 12px;
+  
+  background: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.form-options,
+.switch {
+  text-align: center;
+  margin-top: 10px;
+ 
+
+}
+  </style>
+</head>
+<body style="background: #f2f2f2;">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top shadow-sm"><!--akhane bh-light dila background gray habe-->
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+         <img src="assets/img/logo.png"  width="60" alt="Style Hub"/>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3 search-box">
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>   <!--link-->
+          <li class="nav-item"><a class="nav-link" href="shoap.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="wishlist.html">❤️</a></li>
+        
+             
+              <li class="nav-item">
+            <a class="nav-link" href="card.html">
+           <i class="ri-shopping-bag-line"></i></a>
+          </li>
+      </div>
+    </div>
+
+              <div class="auth-buttons nav-item">
+       
+                <a class="nav-link btn" href="#">
+        𝚂𝚒𝚐𝚗 In</a>
+
+         
+                <a class="nav-link btn" href="b.html">
+         𝚂𝚒𝚐𝚗 Up</a>
+    
+    <!--<li>
+        <button class="btn btn-sm" style="margin: 4px; background-color: #c4c166;"><i class="fa-solid fa-user-plus" class=""></i>𝚂𝚒𝚐𝚗 Up</button>
+    </li>-->
+  </div>   
+    
+  </nav>
+
+ 
+
+
+  <div class="auth-container" style=" box-shadow: 0 8px 20px rgba(0,0,0,0.2); background: white;">
+  <h2>Sign In</h2>
+
+  <form class="auth-form">
+    <div class="form-group">
+      <label>Email or Mobile</label>
+      <input type="text" placeholder="Enter email or mobile">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" placeholder="Enter password">
+    </div>
+
+    <div class="form-options">
+      <a href="#" style="color:purple; text-decoration: none;">Forgot Password?</a>
+    </div>
+
+    <button type="submit" class="btn login-btn">Login</button>
+
+    <p class="switch">
+      Already have an account?
+      <a href="b.html" style="color:purple; text-decoration: none;">Sign Up</a>
+    </p>
+  </form>
+</div>
+
+
+ <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>

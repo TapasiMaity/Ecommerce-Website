@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+    
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+  <!-- Remixicon (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <style type="text/css">
+
+
+     #cart-container{
+      overflow-x: auto;
+     }
+
+    #cart-container table{
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+      white-space: nowrap;
+    }
+     #cart-container table thead{
+      font-weight: 700;
+     }
+     #cart-container table thead td{
+      background: #fd8c66;
+      color: #fff;
+      border: none;
+      padding: 6px 0;
+     }
+     #cart-container table td{
+      border: 1px solid #b6b3b3;
+      text-align: center;
+     }
+      #cart-container table td:nth-child(1){
+        width: 100px;
+      }
+      #cart-container table td:nth-child(2),
+      #cart-container table td:nth-child(3){
+        width: 200px;
+      }
+      #cart-container table td:nth-child(4),
+      #cart-container table td:nth-child(5),
+      #cart-container table td:nth-child(6){
+        width: 170px;
+      }
+       #cart-container table tbody img{
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+       }
+        #cart-container table tbody i{
+          color: red;
+        }
+        #cart-bottom .coupon>div,
+        #cart-bottom .total>div{
+          border: 1px solid #b6b3b3;
+
+        }
+         #cart-bottom .coupon h5,
+          #cart-bottom .total h5{
+           background: #fd8c66;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      font-weight: 700;
+      
+
+         }
+         #cart-bottom .coupon p,
+         #cart-bottom .coupon input{
+          padding: 0 12px;
+         }
+         #cart-bottom .coupon input{
+          height: 44px;
+         }
+         #cart-bottom .coupon input,
+         #cart-bottom .coupon button
+         {
+          margin: 0 0 20px 12px;
+          padding: 7px 12px;
+          font-size: 14x;
+          font-weight: 200;
+          color: white;
+
+
+         }
+         #cart-bottom .total div>div{
+          padding: 0 12px;
+         }
+        
+         .second-hr{
+          background: #b8b7b3;
+          width: 100%;
+          height: 1px;
+
+         }
+         #cart-bottom .total button{
+          margin: 0 12px 20px 0;
+         
+          background-color: green;
+          padding: 7px 12px;
+          font-size: 14x;
+          font-weight: 200;
+          padding-left: 5px;
+          color: white;
+         }
+        
+
+  </style>
+   </head>
+
+
+<body style="background-color: !important;">
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 fixed-top shadow-sm"><!--akhane bh-light dila background gray habe-->
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+         <img src="assets/img/logo.png"  width="60" alt="Style Hub"/>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3 search-box">
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>   <!--link-->
+          <li class="nav-item"><a class="nav-link" href="shoap.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="wishlist.html">❤️</a></li>
+
+         
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+           <i class="ri-shopping-bag-line"></i></a>
+          </li>
+          </ul>
+      </div>
+    </div>
+             <div class="auth-buttons nav-item">
+       
+                <a class="nav-link btn" href="a.html">
+        𝚂𝚒𝚐𝚗 In</a>
+
+         
+                <a class="nav-link btn" href="b.html">
+         𝚂𝚒𝚐𝚗 Up</a>
+    
+    <!--<li>
+        <button class="btn btn-sm" style="margin: 4px; background-color: #c4c166;"><i class="fa-solid fa-user-plus" class=""></i>𝚂𝚒𝚐𝚗 Up</button>
+    </li>-->
+  </div>   
+  </nav>
+ 
+<section id="blog-home"class="pt-3 mt-5 container">
+  <h2 class="font-weight-bold pt-5">Shopping Cart </h2>
+  <hr>
+</section> 
+
+<section id="cart-container" class="container my-5">
+  <table width="100%">
+    <thead>
+      <tr>
+        <td>Remove</td>
+        <td>Image</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Total</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#"><i class="ri-delete-bin-6-fill"></i></a></td>
+        <td><img src="assets/img/shoap-2.webp" alt=""></td>
+        <td>
+          <h5>Brown Leather Shoes</h5>
+        </td>
+        <td><h5>$65</h5></td>
+        <td><input class="w-25 pl-1" value="1" type="number"></td>
+        <td><h5>$65.00</h5></td>
+      </tr>
+       <tr>
+        <td><a href="#"><i class="ri-delete-bin-6-fill"></i></a></td>
+        <td><img src="assets/img/card_2.webp" alt=""></td>
+        <td>
+          <h5>Gray & White Sneaker</h5>
+        </td>
+        <td><h5>$70</h5></td>
+        <td><input class="w-25 pl-1" value="1" type="number"></td>
+        <td><h5>$70.00</h5></td>
+      </tr>
+       <tr>
+        <td><a href="#"><i class="ri-delete-bin-6-fill"></i></a></td>
+        <td><img src="assets/img/shoap-7.jpg" alt=""></td>
+        <td>
+          <h5>Premium Brown Leathet Shoe</h5>
+        </td>
+        <td><h5>$80</h5></td>
+        <td><input class="w-25 pl-1" value="1" type="number"></td>
+        <td><h5>$80.00</h5></td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+
+
+<section id="cart-bottom" class="container">
+  <div class="row">
+    <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+      <div>
+        <h5>COUPON</h5>
+        <p>Enter your Coupon code if you have one.</p>
+        <input type="text" name="" placeholder="Coupon Code">
+        <button style="background-color: black;">APPLY COUPON</button>
+      </div>
+    </div>
+    <div class="total col-lg-6 col-md-6 col-12">
+      <div>
+        <h5>CART TOTAL</h5>
+        <div class="d-flex justify-content-between">
+          <h6>Subtotal</h6>
+          <p>$215.00</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h6>Shipping</h6>
+          <p>$10.00</p>
+        </div>
+        <hr class="second-hr">
+        <div class="d-flex justify-content-between">
+          <h6>Total</h6>
+          <p>$25.00</p>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+        <button class="ml-auto">PROCEED TO CHECKOUT</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer class="mt-5 py-5">
+  <div class="row container mx-auto pt-5">
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <img src="assets/img/logo.png" alt="logo" width="100">
+      <p>Shop smart, online better.<br>New trends every week.<br>Shop.. Smile.. Repeat..</p>
+    </div>
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Featured</h5>
+      <ul class="text-upercase list-unstyled">
+        <li>Men</li>
+        <li>Women</li>
+        <li>Boys</li>
+        <li>Girls</li>
+        <li>New arrivals</li>
+        <li>Shoes</li>
+        <li>Clothes</li>
+      </ul>
+    </div>
+    <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Contact Us</h5>
+      <div>
+        <h5 class="text-upercase">Address</h5>
+        <p>Shop no. 12, Muktaram Bazar, Balighata-7015</p>
+      </div>
+      <div>
+        <h5 class="text-upercase">Phone</h5>
+        <p>96XXXXXXXX</p>
+      </div>
+      <div>
+        <h5 class="text-upercase">Email</h6>
+        <p>stylemail640@gmail.com</p>
+      </div>
+    </div>
+     <div class="footr-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">Instagram</h5>
+
+      <div class="row">
+        <img class="img-fluid w-25 h-90 m-2" src="assets/img/f-1.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-2.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-3.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-4.jpg">
+        <img class="img-fluid w-25 h-100 m-2" src="assets/img/f-5.jpg">
+      </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copyright mt-5">
+    <div class="row container mx-auto">
+      <div class="col-lg-3 col-md-6 col-12 text-nowrap">
+        <p style="text-align: center;">StyleHub ecommerce... All Rights Reserved.</p>
+      </div>
+      <div  style="text-align:right;" class="col-lg-3 col-md-6 col-12">
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-instagram-line"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ <!-- Bootstrap JS -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!--tshirt ar option guloy click korle barobe-->
+</body>
+</html>

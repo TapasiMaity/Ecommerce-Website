@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign up`</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="a.css">
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+  <!-- Remixicon (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style type="text/css">
+  body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top:10%;
+    margin-bottom: 30px;
+    
+}
+
+/* MAIN CARD */
+.auth-container{
+    width: 380px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: purple;
+     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 440px;     
+  max-width: 90%; 
+
+   
+}
+.auth-wrapper{
+
+  background:url(C:/img/anantara_jewel-bagh_jaipur_hotel_teaser_01_880x620.webp);
+}
+
+.auth-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORM GROUP */
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+
+
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid blue;
+}
+
+/* CHECKBOX */
+.form-checkbox{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+.form-checkbox input{
+    margin-right: 6px;
+
+}
+
+/* BUTTON */
+.login-btn{
+    width: 100%;
+    padding: 12px;
+    background: gray;
+    color: white;
+    
+    border-radius: 6px;
+    font-size: 16px;
+  
+}
+
+/* SWITCH LINK */
+.switch{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+.switch a{
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+<body style="background-color: wheat; ">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top shadow-sm"><!--akhane bh-light dila background gray habe-->
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png"  width="60" alt="Style Hub"/>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex ms-3 search-box">
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>   <!--link-->
+          <li class="nav-item"><a class="nav-link" href="shoap.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="wishlist.html">❤️</a></li>
+          
+             
+              <li class="nav-item">
+            <a class="nav-link" href="card.html">
+           <i class="ri-shopping-bag-line"></i></a>
+          </li>
+          </ul>
+      </div>
+    </div>
+              <div class="auth-buttons nav-item">
+       
+                <a class="nav-link btn" href="a.html">
+        𝚂𝚒𝚐𝚗 In</a>
+
+         
+                <a class="nav-link btn" href="#">
+         𝚂𝚒𝚐𝚗 Up</a>
+    <!--<li>
+        <button class="btn btn-sm" style="margin: 4px; background-color: #c4c166;"><i class="fa-solid fa-user-plus" class=""></i>𝚂𝚒𝚐𝚗 Up</button>
+    </li>-->
+  </div>   
+  </nav>
+
+
+<div class="auth-container" style="background: white">
+  <h2 style="color:black;">Create Account</h2>
+
+  <form class="auth-form">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name">
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="Enter email">
+    </div>
+
+    
+
+    <div class="form-group">
+      <label>Phone number</label>
+      <input type="password" placeholder="Create password">
+    </div>
+
+     <div class="form-group">
+      <label> Password</label>
+      <input type="password" placeholder=" password">
+    </div>
+
+    <div class="form-group">
+      <label>confirm Password</label>
+      <input type="password" placeholder="Confirm password">
+    </div>
+
+    <div class="form-checkbox">
+      <input type="checkbox">
+      <label>I agree to Terms & Conditions</label>
+    </div>
+
+    <button type="submit" class="btn login-btn">Sign Up</button>
+
+    <p class="switch">
+      Already have an account?
+      <a href="a.html" style="color:purple;">Sign In</a>
+    </p>
+  </form>
+</div>
+
+ 
+
+ <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
